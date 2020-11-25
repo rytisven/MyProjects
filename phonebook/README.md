@@ -1,7 +1,7 @@
 deployed app: 
 
-              v1: https://hungry-golick-7d53c1.netlify.app/
-              v2: https://hellocontacts.herokuapp.com/
+v1: https://hungry-golick-7d53c1.netlify.app/
+v2: https://hellocontacts.herokuapp.com/
 
 
 An app which allows user to add his contacts, which are being saved
