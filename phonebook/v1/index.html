@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <style>
+        body{
+            text-align: center;
+            background-color: ivory;
+        }
+        .create-new-popup-css {
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0, 0.97);
+            overflow-y: hidden;
+        }
+        .create-new-popup-content {
+            position: relative;
+            top: 20%;
+            width: 100%;
+            text-align: center;
+        }
+        .create-new-popup-title{
+            color: whitesmoke;
+        }
+        .contact-popup-css{
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0, 0.97);
+            overflow-y: hidden;
+        }
+        .contact-popup-content{
+            color: whitesmoke;
+        }
+        .contact-edit-popup-css{
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(245, 63, 63, 0.97);
+            overflow-y: hidden;
+        }
+        .edit-contact-popup-content{
+            color: black;
+        }
+        
+    </style>
+    <body>
+        <h1>Address Book</h1>
+            <div id="create-new-popup" class="create-new-popup-css">
+                <div class="create-new-popup-content">
+                    <form id="create-new-contact">
+                        <h1 class="create-new-popup-title">Create new contact</h1>
+                        <div>
+                            <input placeholder="Name" name="newName">
+                        </div>
+                        <div>
+                            <input placeholder="Surname" name="newSurname">
+                        </div>
+                        <div>
+                            <input placeholder="Phone number" name="phoneNumber">
+                        </div>  
+                        <div>
+                            <textarea placeholder="Address" name="address"></textarea>
+                        </div>
+                        <button>Create new</button>
+                    </form>
+                    <button id="close-button" class="x-button-create-new-contact">Cancel</button>
+                </div>
+            </div>
+        <button id="create-new-button">+</button>
+        <input id="search-contact" placeholder="search">
+        <div id="contacts"></div>
+        <div id="contact-popup" class="contact-popup-css"></div>
+        <div id="contact-edit-popup" class="contact-edit-popup-css"></div>
+
+        <button id="reset">clear storage</button>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="address-book-functions.js"></script>
+        <script src="address-book-app.js"></script>
+    </body>
+</html>
